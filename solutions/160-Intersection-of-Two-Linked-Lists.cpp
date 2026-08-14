@@ -13,8 +13,8 @@ public:
         ListNode *q= headB;
 
         while(p != q){
-            p= (p != NULL) ? p=p->next : headB;
-            q= (q != NULL) ? q=q->next : headA;
+            p= p ? p->next : headB;
+            q= q ? q->next : headA;
         }
         return p;
     }
